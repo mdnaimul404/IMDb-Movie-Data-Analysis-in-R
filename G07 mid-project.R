@@ -5,7 +5,7 @@ if (length(to_install)) {
 }
 
 invisible(lapply(required_pkgs, library, character.only = TRUE))
-imdb_url <- "https://raw.githubusercontent.com/Nafis-Rohan/imdb-5000-data/refs/heads/main/movie_metadata.csv" 
+imdb_url <- "https://raw.githubusercontent.com/mdnaimul404/dataset/refs/heads/main/movie_metadata.csv" 
 
 
 
@@ -186,4 +186,5 @@ ggplot(yearly_scores_clean, aes(x = title_year, y = avg_score, color = avg_score
   geom_smooth(se = TRUE, color = "red") +
   scale_color_viridis_c() +
   labs(title = "Average IMDB Score by Release Year — Cleaned", x = "Year", y = "Average IMDB score")    
+
 
